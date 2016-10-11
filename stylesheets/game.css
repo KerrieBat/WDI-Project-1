@@ -1,0 +1,113 @@
+body{
+  background-color: pink;
+  width:100%;
+  margin:0 auto;
+
+};
+
+/*design for mobile phone size*/
+h1{
+color: navy;
+}
+#logo{
+  width: 100%;
+  max-height: 30px;
+}
+/*nav bar for options*/
+nav {
+width:80%;
+}
+ul{
+  background-color: black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  list-style-type: none;
+  font-size: 100%;
+  width: 100%;
+  padding: 0;
+  margin:  0;
+}
+li{
+  /*min-height: 50px;*/
+  border: 1px solid white;
+}
+/*div - container for players names*/
+#p1Turn {
+  margin-bottom: 10px;
+  width: 100%;
+  display:inline-block;
+}
+#p2Turn {
+margin-bottom: 10px;
+width: 100%;
+display: inline-block;
+}
+/*player names */
+#p1 {
+display: inline-block;
+
+}
+#p2 {
+display: inline-block;
+
+}
+#naught {
+  max-height: 60px;
+  display:inline-block;
+
+}
+#cross {
+  max-height: 60px;
+  display: inline-block;
+
+}
+#play {
+display: inline-block;
+}
+.board {
+  width = 90%
+  display: inline-block;
+}
+/*'div for all squares -9 -3*3'*/
+.squares {
+width: 24%;
+height:100px;
+display: inline-block;
+border: 2px solid black;
+margin: 3%;
+}
+/*#posn00 {
+  float: left;
+}*/
+
+
+/*div winner announcement*/
+.winner {
+
+}
+
+footer {
+
+}
+/*scale up for bigger screens*/
+
+@media (min-width:50em) {
+  body {
+
+    width: 80%;
+
+  }
+  .squares{
+    margin: 5%;
+    min-height: 150px;
+    width: 16.66666667%;
+  }
+  li {
+    width: 24.3333%;
+    display: inline-block;
+    float: left;
+  }
+@media (min-width:80em) {
+
+    }

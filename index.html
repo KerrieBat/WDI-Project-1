@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets\game.css">
+  <title>Document</title>
+</head>
+<body>
+  <img id="logo" src="http://i.imgur.com/2SiZINZ.jpg" alt="">
+
+  <h1>Naughts and Crosses!</h1>
+  <nav>
+    <ul>
+      <li>How to play</li>
+      <li>Start new game</li>
+      <li>Spare</li>
+    </ul>
+  </nav>
+
+  <div id="p1Turn">Player 1:
+    <input type="text" id="p1" name="player1">
+    <img id="naught" src="images/eye_of_sauron.png"/>
+  </div>
+
+  <div id="p2Turn">Player 2:
+    <input type="text" id="p2" name="player2">
+    <img id="cross" src="images/gollum.png"/>
+  </div>
+
+  <input type="button" id="play" name="playBtn" value="PLAY">
+  <section class="board">
+    <div id="00" class="squares">
+      <img src="" alt="">
+    </div>
+    <div id="01" class="squares"></div>
+    <div id="02" class="squares"></div>
+    <div id="10" class="squares"></div>
+    <div id="11" class="squares"></div>
+    <div id="12" class="squares"></div>
+    <div id="20" class="squares"></div>
+    <div id="21" class="squares"></div>
+    <div id="22" class="squares"></div>
+  </section>
+
+  <div class="winner"></div>
+
+  <footer>
+    <h2 id="footer"></h2>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+
+  <script src="scripts\game.js" charset="utf-8"></script>
+
+</html>
