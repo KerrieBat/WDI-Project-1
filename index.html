@@ -8,28 +8,28 @@
   <title>Document</title>
 </head>
 <body>
-  <img id="logo" src="http://i.imgur.com/2SiZINZ.jpg" alt="">
+  <!-- <img id="logo" src="http://i.imgur.com/2SiZINZ.jpg" alt=""> -->
 
-  <h1>Naughts and Crosses!</h1>
-  <!-- <nav>
-    <ul>
-      <li>How to play</li>
-      <li>Start new game</li>
-      <li>Spare</li>
-    </ul>
-  </nav> -->
+  <h1>Monster battle</h1>
+
+  <div id="message">Please type in your names and press 'play'</div>
+
+
+  <input type="button" id="play" name="playBtn" value="PLAY">
+  <input type="button" id="finish" name="finishBtn" value="FINISH">
+  <input type="button" id="instr" name="instructionsBtn" value="READ ME">
+
 
   <div id="p1Turn">Player 1:
     <input type="text" id="p1" name="player1">
-    <img id="naught" src="images/eye_of_sauron.png"/>
+    <img id="naught" src="http://iconbug.com/data/89/256/778283813f4a1ae98a3e6375243fe0d6.png"/>
   </div>
 
   <div id="p2Turn">Player 2:
     <input type="text" id="p2" name="player2">
-    <img id="cross" src="images/gollum.png"/>
+    <img id="cross" src="http://iconbug.com/data/b5/256/390e2c432ea26d61fc6f72ba8f148894.png"/>
   </div>
 
-  <input type="button" id="play" name="playBtn" value="PLAY">
   <section class="board">
 
     <div id="0" class="squares">
@@ -59,17 +59,8 @@
     <div id="8" class="squares">
       <img id="img8" class="imageplace" src="" alt="">
     </div>
-    <!-- <div id="1" class="squares"></div>
-    <div id="2" class="squares"></div>
-    <div id="3" class="squares"></div>
-    <div id="4" class="squares"></div>
-    <div id="5" class="squares"></div>
-    <div id="6" class="squares"></div>
-    <div id="7" class="squares"></div>
-    <div id="8" class="squares"></div> -->
-  </section>
 
-  <div class="winner"></div>
+  </section>
 
   <footer>
     <h2 id="footer"></h2>

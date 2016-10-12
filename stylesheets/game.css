@@ -1,64 +1,57 @@
 body{
-  background-color: pink;
+  background-color: #bac1dc;
   width:100%;
   margin:0 auto;
 
 };
 
 /*design for mobile phone size*/
-h1{
-color: navy;
+h1 {
+text-align: center;
+color: #5f4f98;
 }
-#logo{
-  width: 100%;
-  max-height: 30px;
-}
-/*nav bar for options*/
-/*nav {
-width:80%;
 
-}
-ul{
-  background-color: black;
-  color: white;
+#message{
+  width:80%;
+  background-color: linen;
+  min-height: 30px;
+  margin:10%;
   text-align: center;
-  vertical-align: middle;
-  list-style-type: none;
-  font-size: 100%;
-  width: 30%;
-  padding: 0;
-  margin:  0;
-
+  color: navy;
 }
-li{
-  /*min-height: 50px;*/
-  display: inline-block;
-  border: 1px solid white;
 
-}*/
+.imagePlace{
+  width: 30%;
+  height: 30%;
+  display:
+}
+
 /*div - container for players names*/
 #p1Turn {
   margin-bottom: 10px;
   width: 100%;
   display:inline-block;
+
 }
 #p2Turn {
 margin-bottom: 10px;
 width: 100%;
 display: inline-block;
+
 }
 /*player names */
 #p1 {
 display: inline-block;
-
+width:100px;
 }
 #p2 {
 display: inline-block;
+width:100px;
 
 }
 #naught {
   max-height: 60px;
-  display:inline-block;
+display: inline-block;
 
 }
 #cross {
@@ -67,6 +60,12 @@ display: inline-block;
 
 }
 #play {
+display: inline-block;
+}
+#finish {
+display: inline-block;
+}
+#instr {
 display: inline-block;
 }
 .board {
@@ -80,15 +79,6 @@ height:100px;
 display: inline-block;
 border: 2px solid black;
 margin: 3%;
-}
-/*#posn00 {
-  float: left;
-}*/
-
-
-/*div winner announcement*/
-.winner {
-
 }
 
 footer {
@@ -107,11 +97,7 @@ footer {
     min-height: 150px;
     width: 16.66666667%;
   }
-  /*li {
-    width: 24.3333%;
-    display: inline-block;
-    float: left;
-  }*/
+
 @media (min-width:80em) {
 
     }

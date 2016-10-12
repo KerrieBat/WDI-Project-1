@@ -3,18 +3,21 @@
 //set up variables
 console.log('hello');
 // array of squares
-var rows=[];//array of a row
+//var rows=[];//array of a row
 var squares=[];//array of all rows
-var arraySize = 3;//a square array only
-var $player1 = $('.p1');
-var $player2 = $('.p2');
-var imageX = "images/gollum.png"; //cross
-var image0 = "images/eye_of_sauron.png"; // naught
+//var arraySize = 3;//a square array only
+var $player1Input = $('#p1');
+var $player2Input = $('#p2');
+var imageX = "http://iconbug.com/data/b5/256/390e2c432ea26d61fc6f72ba8f148894.png"; //cross
+var image0 = "http://iconbug.com/data/89/256/778283813f4a1ae98a3e6375243fe0d6.png"; // naught
 var $playBtn = $('#play');
+var $finishBtn = $('#finish');
+var $instructionsBtn = $('#instr');
 var $clickOnBoard = $('.squares');
 var turn = true;//keeps record of whose turn it is
+var $messageBox = $('#message');//box for instructions and winner announcement
 
-var winningArray =[[0,1,2], [4,5,6], [7,8,9]] //all posible connotations of a win
+var winningArray =[[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]] //all posible connotations of a win
 
 // makeEmptyArray() and clear board
 var makeEmptyArray = function() {
@@ -29,12 +32,22 @@ var makeEmptyArray = function() {
 }
 }
 
-//get player names
-var getPlayers = function(){
-}
+// //get player names
+// var getPlayers = function(){
+//   $messageBox.text("Please type in your names and press 'play'");
+//   // var $player1 = $('.p1').text;
+//   // var $player2 = $('.p2').text;
+// //  debugger
+//   return $player1Input.val(), $player2Input.val();
+// }
+
 
 var startGame = function(event){
+  //debugger
   makeEmptyArray();
+  //getPlayers();
+  $messageBox.text("OK " + $player1Input.val() + " click on a square");
+
 // player 1....
 var turn = true;
 return
@@ -99,33 +112,32 @@ var checkWinningMove = function(){
   }
 //if not winning move, toggle turn!!!!
   if (turn === true) {
-  turn = false;
+    turn = false;
+    $messageBox.text("OK " + $player2Input.val() + " click on a square");
   } else {
     turn = true;
+    $messageBox.text("OK " + $player1Input.val() + " click on a square");
   }
 return turn;
 }
 
 var winnerOfGame = function(){
+//  debugger
   //based on whos turn it is the winner is announced
   //with bells and whistles
 console.log("there's a winner");
-if (turn === "0") {
+
+if (turn === true) {
   //winner is player 1
   console.log("winner is Player 1");
+  $messageBox.text("WINNER is " + $player1Input.val() + "..... To play again, press PLAY");
 } else {
   //winner is player 2
   console.log("winner is Player 2");
+$messageBox.text("WINNER is " + $player2Input.val() + "....... To play again, press PLAY");
 }
-  //ask if they want to play again
-  //reset array and clear board
-  var r = confirm("Do you want to play again?");
-if (r == true) {
-    startGame();
-} else {
-    //close
-}
-  prompt("do you want to play again?");
+debugger
+//there is a winner, so we need to finish the game
 }
 
 var nextGo = function(){
@@ -137,3 +149,5 @@ console.log("your go");
 
 $playBtn.click(startGame);
 $clickOnBoard.click(makePlay);
+//$finishBtn.click(do something);
+//$instructionsBtn.click(do something);
