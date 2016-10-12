@@ -14,8 +14,9 @@ color: navy;
   max-height: 30px;
 }
 /*nav bar for options*/
-nav {
+/*nav {
 width:80%;
+
 }
 ul{
   background-color: black;
@@ -24,14 +25,17 @@ ul{
   vertical-align: middle;
   list-style-type: none;
   font-size: 100%;
-  width: 100%;
+  width: 30%;
   padding: 0;
   margin:  0;
+
 }
 li{
   /*min-height: 50px;*/
+  display: inline-block;
   border: 1px solid white;
-}
+
+}*/
 /*div - container for players names*/
 #p1Turn {
   margin-bottom: 10px;
@@ -103,11 +107,11 @@ footer {
     min-height: 150px;
     width: 16.66666667%;
   }
-  li {
+  /*li {
     width: 24.3333%;
     display: inline-block;
     float: left;
-  }
+  }*/
 @media (min-width:80em) {
 
     }
