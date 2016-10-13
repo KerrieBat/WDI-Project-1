@@ -3,7 +3,7 @@ body{
   width:100%;
   margin:0 auto;
 
-};
+}
 
 /*design for mobile phone size*/
 h1 {
@@ -15,27 +15,31 @@ color: #5f4f98;
   width:80%;
   background-color: linen;
   min-height: 30px;
-  margin:10%;
+  margin-left:10%;
+  margin-right: 10%;
   text-align: center;
   color: navy;
 }
 
-.imagePlace{
-  width: 30%;
-  height: 30%;
-  display:
+.imageplace{
+  max-height: 100%;
+  max-width: 100%;
+  /*object-fit: contain;*/
+  margin: auto;
+  display: block;
+  /*background-size: cover;*/
 }
 
 /*div - container for players names*/
 #p1Turn {
   margin-bottom: 10px;
-  width: 100%;
+  width: 49%;
   display:inline-block;
 
 }
 #p2Turn {
 margin-bottom: 10px;
-width: 100%;
+width: 49%;
 display: inline-block;
 
 }
@@ -59,14 +63,28 @@ display: inline-block;
   display: inline-block;
 
 }
+#buttonbar{
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
 #play {
 display: inline-block;
+width:100px;
+}
+#again{
+  display: inline-block;
+  width:100px;
 }
 #finish {
 display: inline-block;
+width:100px;
+
 }
 #instr {
 display: inline-block;
+width:100px;
 }
 .board {
   width = 90%
