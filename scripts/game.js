@@ -5,8 +5,8 @@ console.log('hello');
 var squares=[];// array of squares
 var $player1Input = $('#p1');
 var $player2Input = $('#p2');
-var imageX = "http://iconbug.com/data/b5/256/390e2c432ea26d61fc6f72ba8f148894.png"; //cross
-var image0 = "http://iconbug.com/data/89/256/778283813f4a1ae98a3e6375243fe0d6.png"; // naught
+var imageX = "images/greenmonster.png"; //cross
+var image0 = "images/purplemonster.png"; // naught
 var $playBtn = $('#play');
 var $againBtn = $('#again');
 var $finishBtn = $('#finish');

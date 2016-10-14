@@ -5,32 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="stylesheets\game.css">
-  <title>Document</title>
+  <title>Monsters</title>
+
+<link rel="shortcut icon" href="images\beefavicon.ico"/>
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat+Brush" rel="stylesheet">
 </head>
 <body>
   <!-- <img id="logo" src="http://i.imgur.com/2SiZINZ.jpg" alt=""> -->
 
   <h1>Monster Battle</h1>
 
-  <div id="message">Please type in your names and press 'play'</div>
+  <div id="message">Please type in your names and press 'NEW GAME'</div>
 
   <div id="buttonbar">
-    <input type="button" id="play" name="playBtn" value="NEW GAME">
-    <input type="button" id="again" name="againBtn" value="PLAY AGAIN">
-    <input type="button" id="finish" name="finishBtn" value="FINISH">
-    <input type="button" id="instr" name="instructionsBtn" value="How to Play">
+    <input class="btn" type="button" id="play" name="playBtn" value="NEW GAME">
+    <input class="btn" type="button" id="again" name="againBtn" value="PLAY AGAIN">
+    <input class="btn" type="button" id="finish" name="finishBtn" value="FINISH">
+    <input class="btn" type="button" id="instr" name="instructionsBtn" value="How to Play">
   </div>
 
-  <div id="p1Turn">Player 1:
-    <input type="text" id="p1" name="player1">
-    <img id="naught" src="http://iconbug.com/data/89/256/778283813f4a1ae98a3e6375243fe0d6.png"/>
-    <input type="text" value="0" id="scoreP1">
+  <div id="p1Turn">Monster 1:
+    <input type="text" class="monster" id="p1" name="player1">
+    <img id="naught" src="images\purplemonster.png"/>
+    <!-- <img id="naught" src="http://iconbug.com/data/89/256/778283813f4a1ae98a3e6375243fe0d6.png"/> -->
+    <input type="text" class="monster" value="0" id="scoreP1">
   </div>
 
-  <div id="p2Turn">Player 2:
-    <input type="text" id="p2" name="player2">
-    <img id="cross" src="http://iconbug.com/data/b5/256/390e2c432ea26d61fc6f72ba8f148894.png"/>
-    <input type="text" value="0" id="scoreP2">
+  <div id="p2Turn">Monster 2:
+    <input type="text" class="monster" id="p2" name="player2">
+    <img id="cross" src="images\greenmonster.png"/>
+    <input type="text" class="monster" value="0" id="scoreP2">
 
   </div>
 
