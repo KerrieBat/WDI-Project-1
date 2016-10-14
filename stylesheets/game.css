@@ -1,13 +1,17 @@
 body{
-  background-color: #bac1dc;
-  /*width:100%;*/
+  /*background-color: #bac1dc;*/
   margin:0 auto;
   color: #5f4f98;
-  /*font-family: 'Architects Daughter', cursive;*/
   font-family: 'Caveat Brush', cursive;
   font-size: 20px;
   width: 100vw;
   height:100vh;
+  background: #bac1dc;
+  background-image: -webkit-linear-gradient(top, #bac1dc 40%, #908b9e);
+  background-image: -moz-linear-gradient(top, #bac1dc 40%, #908b9e);
+  background-image: -ms-linear-gradient(top, #bac1dc 40%, #908b9e);
+  background-image: -o-linear-gradient(top, #bac1dc 40%, #908b9e);
+  background-image: linear-gradient(to bottom, #bac1dc 40%, #908b9e);
 }
 
 /*design for mobile phone size*/
@@ -61,35 +65,25 @@ font-weight: bold;
 #p1 {
 display: inline-block;
 width:100px;
-/*font-size: 25px;*/
 height: 30px;
-/*background-color: #bac1dc;*/
 }
 #scoreP1{
   height:30px;
   width: 30px;
   display: inline-block;
-  /*font-size: 25px;*/
-  /*color: #5f4f98;*/
-  /*background-color: #bac1dc;*/
   box-shadow: 10px;
 }
 
 #p2 {
 display: inline-block;
 width:100px;
-/*font-size: 25px;*/
 height: 30px;
-/*background-color: #bac1dc;*/
 }
 
 #scoreP2{
   height:30px;
   width: 30px;
   display: inline-block;
-  /*font-size: 25px;*/
-  /*color: #5f4f98;*/
-  /*background-color: #bac1dc;*/
   box-shadow: 10px;
 }
 
@@ -114,13 +108,13 @@ height: 30px;
 }
 
 .board {
-  width = 90%
+  width :90vw;
+  height: 50vh;
   display: inline-block;
 }
-/*'div for all squares -9 -3*3'*/
 .squares {
   width: 28%;
-  height:100px;
+  height:28%;
   display: inline-block;
   border-width:3px;
   border-radius:10px;
@@ -179,13 +173,11 @@ text-align: center;
 @media (min-width:50em) {
   body {
     width: 80vw;
-    height: 80vh;
+    height: 100vh;
   }
-  .squares{
-    margin: 5%;
-    min-height: 150px;
-    width: 16.66667%;
+  
+  board {
+    width :60vw;
+    height: 100vh;
+    display: inline-block;
   }
-
-@media (min-width:80em) {
-    }
