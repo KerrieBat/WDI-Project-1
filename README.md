@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: TIC TAC TOE
 
-This game has been written as first project in the General ASsembly Web Development Immersive course, by KerrieBat.
+This game has been written as first project in the General Assembly Web Development Immersive course, by KerrieBat.
 
 ---
 

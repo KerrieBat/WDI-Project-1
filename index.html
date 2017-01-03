@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="stylesheets\game.css">
   <title>Monsters</title>
 
-<link rel="shortcut icon" href="images\beefavicon.ico"/>
+<link rel="shortcut icon" href="images/beefavicon.ico"/>
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat+Brush" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,7 @@
 
   <h1>Monster Battle</h1>
 
-  <div id="message">Please type in your names and press 'NEW GAME'</div>
+  <div id="message">Please type in your names and hit NEW GAME</div>
 
   <div id="buttonbar">
     <input class="btn" type="button" id="play" name="playBtn" value="NEW GAME">
@@ -24,18 +24,25 @@
     <input class="btn" type="button" id="instr" name="instructionsBtn" value="How to Play">
   </div>
 
-  <div id="p1Turn">Monster 1:
-    <input type="text" class="monster" id="p1" name="player1">
-    <img id="naught" src="images\purplemonster.png"/>
-    <!-- <img id="naught" src="http://iconbug.com/data/89/256/778283813f4a1ae98a3e6375243fe0d6.png"/> -->
-    <input type="text" class="monster" value="0" id="scoreP1">
+  <div id="p1Turn">
+    <div>Monster 1:
+      <input type="text" class="monster" id="p1" name="player1">
+    </div>
+    <div>
+      <img id="naught" src="images\purplemonster.png"/>
+      <!-- <img id="naught" src="http://iconbug.com/data/89/256/778283813f4a1ae98a3e6375243fe0d6.png"/> -->
+      <input type="text" class="monster" value="0" id="scoreP1">
+    </div>
   </div>
 
-  <div id="p2Turn">Monster 2:
-    <input type="text" class="monster" id="p2" name="player2">
-    <img id="cross" src="images\greenmonster.png"/>
-    <input type="text" class="monster" value="0" id="scoreP2">
-
+  <div id="p2Turn">
+    <div>Monster 2:
+      <input type="text" class="monster" id="p2" name="player2">
+    </div>
+    <div>
+      <img id="cross" src="images\greenmonster.png"/>
+      <input type="text" class="monster" value="0" id="scoreP2">
+    </div>
   </div>
 
   <section class="board">

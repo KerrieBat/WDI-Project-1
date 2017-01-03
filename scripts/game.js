@@ -31,6 +31,9 @@ var makeEmptyArray = function() {
   clearInterval(win1);
   clearInterval(win2);
   clearInterval(win3);
+  for (var i = 0; i < 999; i++) {
+    clearInterval(i);
+  }
 // makeEmptyArray() and clear board
   squares =[];
   for (i=0; i<9; i++) {
