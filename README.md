@@ -17,8 +17,8 @@ Testing revealed more opportunities to introduce more variables and if statement
 ---
 
 ### Installation Instruction
-None!
 
+https://kerriebat.github.io/WDI-Project-1/
 ---
 
 ### Unsolved Problems / extensions
